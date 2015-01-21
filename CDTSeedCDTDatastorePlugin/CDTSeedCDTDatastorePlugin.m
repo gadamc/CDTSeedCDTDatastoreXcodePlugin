@@ -7,12 +7,15 @@
 //
 
 #import "CDTSeedCDTDatastorePlugin.h"
+#import "CDTStartReplicationViewController.h"
+#import "CDTWorkspace.h"
 
 static CDTSeedCDTDatastorePlugin *sharedPlugin;
 
 @interface CDTSeedCDTDatastorePlugin()
 
 @property (nonatomic, strong, readwrite) NSBundle *bundle;
+@property (nonatomic, strong) CDTStartReplicationViewController *replicationWindow;
 @end
 
 @implementation CDTSeedCDTDatastorePlugin
@@ -33,6 +36,12 @@ static CDTSeedCDTDatastorePlugin *sharedPlugin;
     return sharedPlugin;
 }
 
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    _replicationWindow = nil;
+}
+
 - (id)initWithBundle:(NSBundle *)plugin
 {
     if (self = [super init]) {
@@ -45,7 +54,7 @@ static CDTSeedCDTDatastorePlugin *sharedPlugin;
         NSMenuItem *menuItem = [[NSApp mainMenu] itemWithTitle:@"Edit"];
         if (menuItem) {
             [[menuItem submenu] addItem:[NSMenuItem separatorItem]];
-            NSMenuItem *actionMenuItem = [[NSMenuItem alloc] initWithTitle:@"Do Action" action:@selector(doMenuAction) keyEquivalent:@""];
+            NSMenuItem *actionMenuItem = [[NSMenuItem alloc] initWithTitle:@"Seed CDTDatastore" action:@selector(doMenuAction:) keyEquivalent:@""];
             [actionMenuItem setTarget:self];
             [[menuItem submenu] addItem:actionMenuItem];
         }
@@ -53,17 +62,19 @@ static CDTSeedCDTDatastorePlugin *sharedPlugin;
     return self;
 }
 
-// Sample Action, for menu item:
-- (void)doMenuAction
+//  Action
+- (void)doMenuAction:(id)sender
 {
-    NSAlert *alert = [[NSAlert alloc] init];
-    [alert setMessageText:@"Hello, World"];
-    [alert runModal];
-}
-
-- (void)dealloc
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    // get the window of the current workspace
+    NSWindow *appWindow = [NSApp keyWindow];
+    [CDTWorkspace setWorkspaceWindow:appWindow];
+    
+    if (!self.replicationWindow) {
+        self.replicationWindow = [[CDTStartReplicationViewController alloc]
+                              initWithWindowNibName:NSStringFromClass([CDTStartReplicationViewController class])];
+    }
+    
+    [self.replicationWindow showWindow:sender];
 }
 
 @end

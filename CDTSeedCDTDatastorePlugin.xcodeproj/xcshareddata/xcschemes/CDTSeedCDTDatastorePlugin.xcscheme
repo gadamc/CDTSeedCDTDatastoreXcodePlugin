@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "890A4B3E171F031300AFE577"
+               BlueprintIdentifier = "9FBA08171A70583900CA25C2"
                BuildableName = "CDTSeedCDTDatastorePlugin.xcplugin"
                BlueprintName = "CDTSeedCDTDatastorePlugin"
                ReferencedContainer = "container:CDTSeedCDTDatastorePlugin.xcodeproj">
@@ -61,7 +61,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "890A4B3E171F031300AFE577"
+            BlueprintIdentifier = "9FBA08171A70583900CA25C2"
             BuildableName = "CDTSeedCDTDatastorePlugin.xcplugin"
             BlueprintName = "CDTSeedCDTDatastorePlugin"
             ReferencedContainer = "container:CDTSeedCDTDatastorePlugin.xcodeproj">

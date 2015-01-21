@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F321D4D1A70846A00D23ABF /* CDTWorkspace.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F321D4C1A70846A00D23ABF /* CDTWorkspace.m */; };
 		9FBA081C1A70583900CA25C2 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBA081B1A70583900CA25C2 /* AppKit.framework */; };
 		9FBA081E1A70583900CA25C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBA081D1A70583900CA25C2 /* Foundation.framework */; };
 		9FBA08231A70583900CA25C2 /* CDTSeedCDTDatastorePlugin.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 9FBA08221A70583900CA25C2 /* CDTSeedCDTDatastorePlugin.xcscheme */; };
 		9FBA08261A70583900CA25C2 /* CDTSeedCDTDatastorePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBA08251A70583900CA25C2 /* CDTSeedCDTDatastorePlugin.m */; };
+		9FBA08311A70587800CA25C2 /* CDTStartReplicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBA082F1A70587800CA25C2 /* CDTStartReplicationViewController.m */; };
+		9FBA08321A70587800CA25C2 /* CDTStartReplicationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FBA08301A70587800CA25C2 /* CDTStartReplicationViewController.xib */; };
+		9FD2CC1D1A717EB100FD76C8 /* com.cloudant.mobileperformance in Resources */ = {isa = PBXBuildFile; fileRef = 9FD2CC1C1A717EB100FD76C8 /* com.cloudant.mobileperformance */; };
+		E63CE82BB908B6D27DE8A7E9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A3718AD93BD15DE97714FCE /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A3718AD93BD15DE97714FCE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F321D4A1A707FA100D23ABF /* XcodeIDEHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XcodeIDEHeaders.h; sourceTree = "<group>"; };
+		9F321D4B1A70846A00D23ABF /* CDTWorkspace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTWorkspace.h; sourceTree = "<group>"; };
+		9F321D4C1A70846A00D23ABF /* CDTWorkspace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTWorkspace.m; sourceTree = "<group>"; };
 		9FBA08181A70583900CA25C2 /* CDTSeedCDTDatastorePlugin.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDTSeedCDTDatastorePlugin.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FBA081B1A70583900CA25C2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		9FBA081D1A70583900CA25C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -21,6 +30,14 @@
 		9FBA08221A70583900CA25C2 /* CDTSeedCDTDatastorePlugin.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = CDTSeedCDTDatastorePlugin.xcscheme; path = CDTSeedCDTDatastorePlugin.xcodeproj/xcshareddata/xcschemes/CDTSeedCDTDatastorePlugin.xcscheme; sourceTree = SOURCE_ROOT; };
 		9FBA08241A70583900CA25C2 /* CDTSeedCDTDatastorePlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDTSeedCDTDatastorePlugin.h; sourceTree = "<group>"; };
 		9FBA08251A70583900CA25C2 /* CDTSeedCDTDatastorePlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDTSeedCDTDatastorePlugin.m; sourceTree = "<group>"; };
+		9FBA082E1A70587800CA25C2 /* CDTStartReplicationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTStartReplicationViewController.h; sourceTree = "<group>"; };
+		9FBA082F1A70587800CA25C2 /* CDTStartReplicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTStartReplicationViewController.m; sourceTree = "<group>"; };
+		9FBA08301A70587800CA25C2 /* CDTStartReplicationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CDTStartReplicationViewController.xib; sourceTree = "<group>"; };
+		9FBA08341A705D5F00CA25C2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FD2CC1C1A717EB100FD76C8 /* com.cloudant.mobileperformance */ = {isa = PBXFileReference; lastKnownFileType = folder; path = com.cloudant.mobileperformance; sourceTree = "<group>"; };
+		9FFEDE231A71772C00492899 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		A85658E6D28A9754370A8D73 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		EFF143C3B3A489D43BAE289C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +47,7 @@
 			files = (
 				9FBA081C1A70583900CA25C2 /* AppKit.framework in Frameworks */,
 				9FBA081E1A70583900CA25C2 /* Foundation.framework in Frameworks */,
+				E63CE82BB908B6D27DE8A7E9 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,9 +57,11 @@
 		9FBA080F1A70583900CA25C2 = {
 			isa = PBXGroup;
 			children = (
+				9FD2CC1C1A717EB100FD76C8 /* com.cloudant.mobileperformance */,
 				9FBA081F1A70583900CA25C2 /* CDTSeedCDTDatastorePlugin */,
 				9FBA081A1A70583900CA25C2 /* Frameworks */,
 				9FBA08191A70583900CA25C2 /* Products */,
+				D6F6E159B4E38D520CF8F226 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +78,7 @@
 			children = (
 				9FBA081B1A70583900CA25C2 /* AppKit.framework */,
 				9FBA081D1A70583900CA25C2 /* Foundation.framework */,
+				9A3718AD93BD15DE97714FCE /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -65,8 +86,14 @@
 		9FBA081F1A70583900CA25C2 /* CDTSeedCDTDatastorePlugin */ = {
 			isa = PBXGroup;
 			children = (
+				9F321D4A1A707FA100D23ABF /* XcodeIDEHeaders.h */,
+				9F321D4B1A70846A00D23ABF /* CDTWorkspace.h */,
+				9F321D4C1A70846A00D23ABF /* CDTWorkspace.m */,
 				9FBA08241A70583900CA25C2 /* CDTSeedCDTDatastorePlugin.h */,
 				9FBA08251A70583900CA25C2 /* CDTSeedCDTDatastorePlugin.m */,
+				9FBA082E1A70587800CA25C2 /* CDTStartReplicationViewController.h */,
+				9FBA082F1A70587800CA25C2 /* CDTStartReplicationViewController.m */,
+				9FBA08301A70587800CA25C2 /* CDTStartReplicationViewController.xib */,
 				9FBA08201A70583900CA25C2 /* Supporting Files */,
 			);
 			path = CDTSeedCDTDatastorePlugin;
@@ -75,10 +102,21 @@
 		9FBA08201A70583900CA25C2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9FFEDE231A71772C00492899 /* README.md */,
 				9FBA08211A70583900CA25C2 /* Info.plist */,
+				9FBA08341A705D5F00CA25C2 /* Podfile */,
 				9FBA08221A70583900CA25C2 /* CDTSeedCDTDatastorePlugin.xcscheme */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6F6E159B4E38D520CF8F226 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A85658E6D28A9754370A8D73 /* Pods.debug.xcconfig */,
+				EFF143C3B3A489D43BAE289C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -88,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FBA08291A70583900CA25C2 /* Build configuration list for PBXNativeTarget "CDTSeedCDTDatastorePlugin" */;
 			buildPhases = (
+				AC5F6D09C863B456CA56B2BE /* Check Pods Manifest.lock */,
 				9FBA08141A70583900CA25C2 /* Sources */,
 				9FBA08151A70583900CA25C2 /* Resources */,
 				9FBA08161A70583900CA25C2 /* Frameworks */,
+				7F1278AC830E971D29522DE5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,17 +177,54 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FD2CC1D1A717EB100FD76C8 /* com.cloudant.mobileperformance in Resources */,
 				9FBA08231A70583900CA25C2 /* CDTSeedCDTDatastorePlugin.xcscheme in Resources */,
+				9FBA08321A70587800CA25C2 /* CDTStartReplicationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F1278AC830E971D29522DE5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC5F6D09C863B456CA56B2BE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9FBA08141A70583900CA25C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FBA08311A70587800CA25C2 /* CDTStartReplicationViewController.m in Sources */,
+				9F321D4D1A70846A00D23ABF /* CDTWorkspace.m in Sources */,
 				9FBA08261A70583900CA25C2 /* CDTSeedCDTDatastorePlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +265,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 			};
@@ -220,12 +298,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 			};
 			name = Release;
 		};
 		9FBA082A1A70583900CA25C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A85658E6D28A9754370A8D73 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
@@ -240,6 +320,7 @@
 		};
 		9FBA082B1A70583900CA25C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFF143C3B3A489D43BAE289C /* Pods.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
@@ -271,6 +352,7 @@
 				9FBA082B1A70583900CA25C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

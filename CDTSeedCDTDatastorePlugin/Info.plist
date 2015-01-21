@@ -33,6 +33,10 @@
 	<string>CDTSeedCDTDatastorePlugin</string>
 	<key>XC4Compatible</key>
 	<true/>
+	<key>XC5Compatible</key>
+	<true/>
+	<key>XCGCReady</key>
+	<true/>
 	<key>XCPluginHasUI</key>
 	<false/>
 </dict>
